@@ -6,6 +6,10 @@ public class User{
 	private String username;
 	private String email;
 	private String password;
+	private UserType userType;
+	private Permissions permissions;
+	private String userToken;
+	
 	public Long getId() {
 		return id;
 	}
@@ -29,6 +33,24 @@ public class User{
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public UserType getUserType() {
+		return userType;
+	}
+	public void setUserType(UserType userType) {
+		this.userType = userType;
+	}
+	public Permissions getPermissions() {
+		return permissions;
+	}
+	public void setPermissions(Permissions permissions) {
+		this.permissions = permissions;
+	}
+	public String getUserToken() {
+		return userToken;
+	}
+	public void setUserToken(String userToken) {
+		this.userToken = userToken;
 	}
 	
 }
