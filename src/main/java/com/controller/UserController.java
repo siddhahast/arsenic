@@ -25,13 +25,14 @@ public class UserController implements UserService{
 	private UserFacade userFacade;
 	
 	@RequestMapping(value="/userDummy", method=RequestMethod.GET)
-	public ResponseEntity<User> filterDummy() 
+	@ResponseBody
+	public User filterDummy() 
 	{
 		User user = new User();
 		user.setId(1L);
 		user.setUsername("Siddhahast");
 		user.setEmail("siddhahast.nitr@gmail.com");
-		return new ResponseEntity<User>(user, HttpStatus.OK);
+		return user;
 	}
 
 	@RequestMapping(value="/users", method = RequestMethod.GET)

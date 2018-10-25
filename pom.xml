@@ -9,13 +9,19 @@
   <url>http://maven.apache.org</url>
   <properties>
         <springframework.version>4.2.0.RELEASE</springframework.version>
-        <jackson.version>2.6.7.1</jackson.version>
+        <jackson.version>2.2.3</jackson.version>
+        <hibernate.version>4.3.5.Final</hibernate.version>
     </properties>
  
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
             <version>${springframework.version}</version>
         </dependency>
         <dependency>
@@ -34,7 +40,62 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.1.0</version>
         </dependency>
+        <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		
+		<!-- Apache Commons DBCP -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>com.google.code.gson</groupId>
+    		<artifactId>gson</artifactId>
+    		<version>2.8.5</version>
+		</dependency>
              
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-oxm -->
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-oxm</artifactId>
+    		<version>5.1.1.RELEASE</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>com.fasterxml.jackson.core</groupId>
+    		<artifactId>jackson-core</artifactId>
+    		<version>${jackson.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.7.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		
+		<dependency>
+       		<groupId>net.sf.json-lib</groupId>
+        	<artifactId>json-lib</artifactId>
+        	<version>2.4</version>
+        	<classifier>jdk15</classifier>
+    	</dependency>
+        
     </dependencies>
  
     <build>

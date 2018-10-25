@@ -7,7 +7,8 @@ import org.springframework.http.ResponseEntity;
 import com.datatype.Booking;
 import com.datatype.VoidData;
 
-public interface BookingService {
+public interface BookingService 
+{
 	
 	public ResponseEntity<List<Booking>> filterByUser(Long userid);
 	

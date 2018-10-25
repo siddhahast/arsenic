@@ -1,7 +1,18 @@
 package com.datatype;
 
-public class User{
+import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="user")
+public class User implements Serializable{
+
+	@Id
+	@Column(name="id")
 	private Long id;
 	private String username;
 	private String email;

@@ -1,6 +1,6 @@
 package com.facade;
 
-public class FlightSeatPriceFacade 
+public interface FlightSeatPriceFacade 
 {
 
 	

@@ -11,7 +11,7 @@ import com.datatype.UserFilter;
 public interface UserService 
 {
 
-	public ResponseEntity<User> filterDummy();
+	public User filterDummy();
 	
 	public ResponseEntity<List<User>> filter(UserFilter filter);
 	
