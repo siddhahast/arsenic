@@ -1,6 +1,8 @@
 package com.datatype;
 
-public class UserFilter {
+import java.io.Serializable;
+
+public class UserFilter implements Serializable{
 
 	private Long[] userIds;
 	private UserType[] userTypes;

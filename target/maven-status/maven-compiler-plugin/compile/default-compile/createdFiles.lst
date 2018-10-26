@@ -6,6 +6,7 @@ com/datatype/UserType.class
 com/facade/UserFacade.class
 com/datatype/Permissions.class
 com/datatype/UserFilter.class
+com/mvc/ThreadLocalInterceptor.class
 com/controller/UserController.class
 com/datatype/FlightSeat.class
 com/service/UserService.class

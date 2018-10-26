@@ -10,6 +10,17 @@ xsi:schemaLocation="
 	<context:component-scan base-package="com" />
 	<context:annotation-config></context:annotation-config>
 	
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<ref bean="threadLocalInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<bean id="threadLocalInterceptor" class="com.mvc.ThreadLocalInterceptor">
+		
+	</bean>
+	
 	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
 		<property name="messageConverters">
 			<list>

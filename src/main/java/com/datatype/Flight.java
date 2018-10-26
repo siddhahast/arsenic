@@ -1,6 +1,8 @@
 package com.datatype;
 
-public class Flight {
+import java.io.Serializable;
+
+public class Flight implements Serializable{
 
 	private Long id;
 	private String name;
