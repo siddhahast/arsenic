@@ -2,6 +2,7 @@ package com.controller;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import com.datatype.LoginRequest;
 import com.datatype.User;
 import com.datatype.UserFilter;
 import com.facade.UserFacade;
+import com.mvc.ThreadLocalInterceptor;
 import com.service.UserService;
 
 @Controller
@@ -24,10 +26,13 @@ public class UserController implements UserService{
 	@Autowired
 	private UserFacade userFacade;
 	
+	private static final Logger logger = Logger.getLogger(UserController.class);
+	
 	@RequestMapping(value="/userDummy", method=RequestMethod.GET)
 	@ResponseBody
 	public User filterDummy() 
 	{
+		logger.info("user controller dummy method");
 		User user = new User();
 		user.setId(1L);
 		user.setUsername("Siddhahast");

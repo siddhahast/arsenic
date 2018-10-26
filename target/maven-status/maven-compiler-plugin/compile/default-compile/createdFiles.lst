@@ -14,6 +14,7 @@ com/facade/impl/FlightFacadeImpl.class
 com/facade/FlightSeatPriceFacade.class
 com/service/BookingService.class
 com/datatype/FlightIternary.class
+com/http/RequestWrapperFilter.class
 com/datatype/Flight.class
 com/datatype/SeatType.class
 com/facade/BookingFacade.class
