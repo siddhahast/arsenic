@@ -17,7 +17,6 @@ import com.datatype.LoginRequest;
 import com.datatype.User;
 import com.datatype.UserFilter;
 import com.facade.UserFacade;
-import com.mvc.ThreadLocalInterceptor;
 import com.service.UserService;
 
 @Controller
