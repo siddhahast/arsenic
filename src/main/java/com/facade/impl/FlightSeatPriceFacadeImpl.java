@@ -1,8 +1,7 @@
 package com.facade.impl;
 
-import org.springframework.stereotype.Component;
-
 import com.facade.FlightSeatPriceFacade;
+import org.springframework.stereotype.Component;
 
 @Component
 public class FlightSeatPriceFacadeImpl implements FlightSeatPriceFacade{

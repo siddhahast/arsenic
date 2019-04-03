@@ -1,9 +1,9 @@
 package com.facade;
 
-import com.datatype.FlightFilter;
-import java.util.List;
-
 import com.datatype.Flight;
+import com.datatype.FlightFilter;
+
+import java.util.List;
 
 public interface FlightFacade 
 {

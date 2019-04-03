@@ -1,8 +1,9 @@
 package com.controller;
 
+import com.datatype.Booking;
+import com.datatype.VoidData;
 import com.facade.BookingFacade;
-import java.util.List;
-
+import com.service.BookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,9 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.datatype.Booking;
-import com.datatype.VoidData;
-import com.service.BookingService;
+import java.util.List;
 
 @Controller
 public class BookingController implements BookingService

@@ -3,6 +3,7 @@ package com.facade;
 import com.datatype.LoginRequest;
 import com.datatype.User;
 import com.datatype.UserFilter;
+
 import java.util.List;
 
 public interface UserFacade 

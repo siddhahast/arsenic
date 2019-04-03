@@ -1,8 +1,8 @@
 package com.facade;
 
-import java.util.List;
-
 import com.datatype.Booking;
+
+import java.util.List;
 
 public interface BookingFacade {
 

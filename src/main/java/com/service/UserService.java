@@ -1,12 +1,11 @@
 package com.service;
 
 import com.datatype.LoginRequest;
-import java.util.List;
-
-import org.springframework.http.ResponseEntity;
-
 import com.datatype.User;
 import com.datatype.UserFilter;
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
 
 public interface UserService 
 {

@@ -1,10 +1,10 @@
 package com.facade;
 
-import java.util.List;
-
 import com.datatype.Flight;
 import com.datatype.FlightFilter;
 import com.datatype.FlightIternary;
+
+import java.util.List;
 
 public interface FlightIternaryFacade 
 {

@@ -1,11 +1,10 @@
 package com.service;
 
-import java.util.List;
-
-import org.springframework.http.ResponseEntity;
-
 import com.datatype.Booking;
 import com.datatype.VoidData;
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
 
 public interface BookingService 
 {

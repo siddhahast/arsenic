@@ -1,12 +1,11 @@
 package com.facade.impl;
 
-import java.util.List;
-
-import org.springframework.stereotype.Component;
-
 import com.datatype.Flight;
 import com.datatype.FlightFilter;
 import com.facade.FlightFacade;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class FlightFacadeImpl implements FlightFacade
