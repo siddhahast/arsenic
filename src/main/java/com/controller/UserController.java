@@ -13,6 +13,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import com.datatype.LoginRequest;
+import com.datatype.User;
+import com.datatype.UserFilter;
+import com.facade.UserFacade;
+import com.service.UserService;
 
 @Controller
 public class UserController implements UserService{
