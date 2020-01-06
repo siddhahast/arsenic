@@ -1,5 +1,6 @@
 package com.service;
 
+import com.common.def.ServiceResponse;
 import com.datatype.LoginRequest;
 import com.datatype.User;
 import com.datatype.UserFilter;
@@ -10,7 +11,7 @@ import java.util.List;
 public interface UserService 
 {
 
-	public User filterDummy();
+	public ServiceResponse<User> filterDummy();
 	
 	public ResponseEntity<List<User>> filter(UserFilter filter);
 	

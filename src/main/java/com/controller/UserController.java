@@ -1,5 +1,6 @@
 package com.controller;
 
+import com.common.def.ServiceResponse;
 import com.datatype.LoginRequest;
 import com.datatype.User;
 import com.datatype.UserFilter;
@@ -20,7 +21,7 @@ import com.facade.UserFacade;
 import com.service.UserService;
 
 @Controller
-public class UserController implements UserService{
+public class UserController extends BaseController implements UserService{
 
 	@Autowired
 	private UserFacade userFacade;
@@ -29,14 +30,14 @@ public class UserController implements UserService{
 	
 	@RequestMapping(value="/userDummy", method=RequestMethod.GET)
 	@ResponseBody
-	public User filterDummy() 
+	public ServiceResponse<User> filterDummy()
 	{
 		logger.info("user controller dummy method");
 		User user = new User();
 		user.setId(1L);
 		user.setUsername("Siddhahast");
 		user.setEmail("siddhahast.nitr@gmail.com");
-		return user;
+		return new ServiceResponse<>();
 	}
 
 	@RequestMapping(value="/users", method = RequestMethod.GET)

@@ -1,5 +1,7 @@
 package com.datatype;
 
+import com.common.def.ServiceData;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -8,7 +10,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name="user")
-public class User implements Serializable{
+public class User implements Serializable, ServiceData {
 
 	@Id
 	@Column(name="id")

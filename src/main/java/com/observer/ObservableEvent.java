@@ -28,7 +28,7 @@ public class ObservableEvent<O, P> {
 		return parameter;
 	}
 	
-	public O getObserver()
+	public O getObservable()
 	{
 		return observable;
 	}
